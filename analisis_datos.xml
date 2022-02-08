@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analisis_encusta>
+	<participantes numero="12"/>
+	<resultado nombre="lenguajes_conoce">
+		<lenguaje nombre="java" respuestas="12" porcentaje="100"/>
+		<lenguaje nombre="python" respuestas="3" porcentaje="25"/>
+		<lenguaje nombre="javascript" respuestas="2" porcentaje="16.66"/>
+		<lenguaje nombre="php" respuestas="1" porcentaje="8.33"/>
+	</resultado>
+	<resultado nombre="lenguajes_interes">
+		<lenguaje nombre="kotlin" respuestas="6" porcentaje="50"/>
+		<lenguaje nombre="dart" respuestas="2" porcentaje="16.66"/>
+	</resultado>
+	<resultado nombre="bases_datos">
+		<lenguaje nombre="mysql" respuestas="12" porcentaje="100"/>
+		<lenguaje nombre="sqlite" respuestas="3" porcentaje="25"/>
+	</resultado>
+	<resultado nombre="sistemas_operativos">
+		<lenguaje nombre="windows" respuestas="10" porcentaje="83.33"/>
+		<lenguaje nombre="linux" respuestas="1" porcentaje="8.33"/>
+		<lenguaje nombre="windows+wsl" respuestas="1" porcentaje="8.33"/>
+		<lenguaje nombre="macos" respuestas="0" porcentaje="0"/>
+	</resultado>
+	<resultado nombre="framework_web">
+		<lenguaje nombre="windows" respuestas="10" porcentaje="83.33"/>
+		<lenguaje nombre="linux" respuestas="1" porcentaje="8.33"/>
+		<lenguaje nombre="windows+wsl" respuestas="1" porcentaje="8.33"/>
+		<lenguaje nombre="macos" respuestas="0" porcentaje="0"/>
+	</resultado>
+</analisis_encusta>
