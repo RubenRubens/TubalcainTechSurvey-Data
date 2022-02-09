@@ -21,4 +21,5 @@ let $up := <encuestado nombre="Daniel">
 	</encuestado>
 
   return
-insert node $up as last into doc('encuesta.xml')/encuesta
+
+insert node $up as last into db:open-pre("tech_survey", 0)
