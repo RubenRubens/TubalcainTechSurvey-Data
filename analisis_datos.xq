@@ -1,1 +1,2 @@
-for $encuestado in doc("encuesta.xml")//encuesta/encuestado return $encuestado/@nombre
+for $encuestado in db:open("tech_survey")//encuesta/encuestado
+	return $encuestado/@nombre
