@@ -2,32 +2,15 @@
 
 ---
 
-## Administracion de BaseX con podman
-
-En esta demo se utiliza podman para virtualizar BaseX. Puedes acceder a
-la documentación de podman [aquí](https://docs.podman.io/en/latest/).
-
-1. Crear un contenedor.
+## Uso con Docker
 
 ```
-podman run -ti \
+docker run -d \
     --name basexhttp \
     --publish 1984:1984 \
     --publish 8984:8984 \
-    --volume $(pwd)/basex:/srv:Z \
+    --volume $(pwd)/basex:/srv/basex \
     basex/basexhttp:latest
-```
-
-2. Copiar el archivo `books.xml` al contenedor.
-
-```
-podman cp books.xml basexhttp:/srv
-```
-
-3. Uso de basexclient (el cliente CLI).
-
-```
-podman exec -ti basexhttp basexclient
 ```
 
 ---
