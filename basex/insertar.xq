@@ -22,4 +22,4 @@ let $up := <encuestado nombre="Daniel">
 
   return
 
-insert node $up as last into db:open("tech_survey", 0)/encuesta
+insert node $up as last into db:open("tech_survey")/encuesta
