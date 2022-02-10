@@ -4,6 +4,9 @@
 
 ## Uso con Docker
 
+
+Crear un nuevo contenedor:
+
 ```
 docker run -d \
     --name basexhttp \
@@ -12,6 +15,15 @@ docker run -d \
     --volume $(pwd)/basex:/srv/basex \
     basex/basexhttp:latest
 ```
+
+Acceso a la linea de comandos de BaseX:
+
+```
+docker exec -ti basexhttp basexclient
+```
+
+Los credenciales por defecto son usuario `admin`
+y la contraseña `admin`.
 
 ---
 
@@ -25,7 +37,7 @@ La documentación completa la puedes encontrar [aquí](https://docs.basex.org/wi
 ALTER PASSWORD admin <contraseña>
 ```
 
-### Crea un nuevo usuario
+### Crear un nuevo usuario
 
 Crea un nuevo usuario con permisos de lectura y escritura sobre una base de datos.
 
@@ -36,14 +48,28 @@ GRANT WRITE ON <base_de_datos> <usuario>
 
 ### Crear una base de datos
 
-Para crear una base de datos a partir de un XML.
+Vamos a crear una base de datos llamada `tech_survey`, abrirla y
+añardir los datos del documento que se encuetra en `./basex/encuesta.xml`
 
-### Ejecucion de codigo
+```
+CREATE DATABASE tech_survey
+OPEN tech_survey
+ADD basex/encuesta.xml
+```
 
-Para ejecutar un script:
+### Ejecucion de XQuery
+
+Para ejecutar un script de XQuery:
 
 ```
 RUN <script_file>
+```
+
+En nuestro caso particular tenemos que escribir:
+
+```
+RUN basex/analisis_datos.xq
+RUN basex/insertar.xq
 ```
 
 ---
@@ -56,7 +82,21 @@ Para conocer mas sobre REST, recomendamos la lectura del [blog de Red Hat](https
 
 ### Acceso a un documento de la base de datos
 
+De foma general tenemos que escribir:
+
 ```
 http -a <usuario>:<contraseña> localhost:8984/rest/<base_de_datos>/<documento>
 ```
 
+En este caso particular lo que vamos a necesitar es:
+
+```
+http -a admin:admin localhost:8984/rest/tech_survey/encuesta.xml
+```
+
+Si queremos realizar una consulta (por ejemplo la de `analisis_datos.xq`)
+tenemos que escribir:
+
+```
+http -a admin:admin localhost:8984/rest/?run=analisis_datos.xq
+```
