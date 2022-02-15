@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tecnologias>
+	<lenguajes>
+		<lenguaje>java</lenguaje>
+		<lenguaje>python</lenguaje>
+		<lenguaje>html/css</lenguaje>
+		<lenguaje>javascript</lenguaje>
+		<lenguaje>php</lenguaje>
+		<lenguaje>c/c++</lenguaje>
+		<lenguaje>sql</lenguaje>
+		<lenguaje>bash/shell</lenguaje>
+		<lenguaje>powershell</lenguaje>
+		<lenguaje>kotlin</lenguaje>
+		<lenguaje>dart</lenguaje>
+		<lenguaje>go</lenguaje>
+		<lenguaje>rust</lenguaje>
+		<lenguaje>swift</lenguaje>
+	</lenguajes>
+	<bases_datos>
+		<bd>mysql</bd>
+		<bd>sqlite</bd>
+		<bd>mongodb</bd>
+		<bd>redis</bd>
+		<bd>postgresql</bd>
+		<bd>mariadb</bd>
+		<bd>dynamodb</bd>
+		<bd>oracle</bd>
+		<bd>microsoft sql server</bd>
+		<bd>elasticsearch</bd>
+		<bd>firebase</bd>
+		<bd>dynamodb</bd>
+		<bd>neodatis</bd>
+	</bases_datos>
+	<editores>
+		<editor>visual studio</editor>
+		<editor>notepad++</editor>
+		<editor>eclipse</editor>
+		<editor>vscode</editor>
+		<editor>sublime text</editor>
+		<editor>intellij</editor>
+		<editor>atom</editor>
+		<editor>vim</editor>
+		<editor>netbeans</editor>
+		<editor>android studio</editor>
+		<editor>xcode</editor>
+	</editores>
+	<frameworks_web>
+		<framework>react.js</framework>
+		<framework>jquery</framework>
+		<framework>express</framework>
+		<framework>angular</framework>
+		<framework>vue.js</framework>
+		<framework>asp.net</framework>
+		<framework>flask</framework>
+		<framework>django</framework>
+		<framework>spring</framework>
+		<framework>laravel</framework>
+		<framework>symphony</framework>
+		<framework>svelte</framework>
+		<framework>drupal</framework>
+		<framework>vert.x</framework>
+	</frameworks_web>
+	<sistemas_operativos>
+		<so>windows</so>
+		<so>linux</so>
+		<so>macos</so>
+		<so>wsl</so>
+	</sistemas_operativos>
+</tecnologias>
