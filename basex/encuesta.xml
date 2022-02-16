@@ -20,6 +20,9 @@
 		<pregunta nombre="framework_web">
 			<framework nombre="laravel"/>
 		</pregunta>
+		<pregunta nombre="editores">
+			<editor nombre="vscode"/>
+		</pregunta>
 	</encuestado>
 	<encuestado nombre="Lucia">
 		<pregunta nombre="lenguajes_conoce">
