@@ -1,0 +1,28 @@
+<query>
+	<text>
+		let $up := <![CDATA[<encuestado nombre="Celia">
+			<pregunta nombre="lenguajes_conoce">
+				<lenguaje nombre="javascript"/>
+				<lenguaje nombre="go"/>
+			</pregunta>
+			<pregunta nombre="lenguajes_interes">
+				<lenguaje nombre="python"/>
+			</pregunta>
+			<pregunta nombre="bases_datos">
+				<base_datos nombre="sqlite"/>
+			</pregunta>
+			<pregunta nombre="sistemas_operativos">
+				<sistema_operativo nombre="linux"/>
+			</pregunta>
+			<pregunta nombre="framework_web">
+				<framework nombre="django"/>
+			</pregunta>
+			<pregunta nombre="editores">
+				<editor nombre="vscode"/>
+			</pregunta>
+		</encuestado>]]>
+		return
+
+		insert node $up as last into db:open("tech_survey")/encuesta
+	</text>
+</query>
