@@ -6,7 +6,7 @@ declare variable $participantes := count(db:open("tech_survey")//encuesta/encues
 	{
 		for $lenguaje in db:open("tech_survey")//tecnologias/lenguajes/lenguaje
 		return
-		<lenguaje
+		<tecnologia
 		nombre="{$lenguaje}"
 		respuestas="{
 			count(db:open("tech_survey")//encuesta/encuestado/pregunta[@nombre='lenguajes_conoce']/lenguaje[@nombre=$lenguaje])
@@ -22,7 +22,7 @@ declare variable $participantes := count(db:open("tech_survey")//encuesta/encues
 	{
 		for $lenguaje in db:open("tech_survey")//tecnologias/lenguajes/lenguaje
 		return
-		<lenguaje
+		<tecnologia
 		nombre="{$lenguaje}"
 		respuestas="{
 			count(db:open("tech_survey")//encuesta/encuestado/pregunta[@nombre='lenguajes_interes']/lenguaje[@nombre=$lenguaje])
@@ -38,7 +38,7 @@ declare variable $participantes := count(db:open("tech_survey")//encuesta/encues
 	{
 		for $bd in db:open("tech_survey")//tecnologias/bases_datos/bd
 		return
-		<lenguaje
+		<tecnologia
 		nombre="{$bd}"
 		respuestas="{
 			count(db:open("tech_survey")//encuesta/encuestado/pregunta[@nombre='bases_datos']/base_datos[@nombre=$bd])
@@ -54,7 +54,7 @@ declare variable $participantes := count(db:open("tech_survey")//encuesta/encues
 	{
 		for $editor in db:open("tech_survey")//tecnologias/editores/editor
 		return
-		<lenguaje
+		<tecnologia
 		nombre="{$editor}"
 		respuestas="{
 			count(db:open("tech_survey")//encuesta/encuestado/pregunta[@nombre='editores']/editor[@nombre=$editor])
@@ -70,7 +70,7 @@ declare variable $participantes := count(db:open("tech_survey")//encuesta/encues
 	{
 		for $framework in db:open("tech_survey")//tecnologias/frameworks_web/framework
 		return
-		<lenguaje
+		<tecnologia
 		nombre="{$framework}"
 		respuestas="{
 			count(db:open("tech_survey")//encuesta/encuestado/pregunta[@nombre='framework_web']/framework[@nombre=$framework])
