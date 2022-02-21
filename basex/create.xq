@@ -1,3 +1,5 @@
+(:~ Inserta en la BD a una persona que ha realizado la encuesta ~:)
+
 let $up := <encuestado nombre="Daniel">
 		<pregunta nombre="lenguajes_conoce">
 			<lenguaje nombre="java"/>
