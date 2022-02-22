@@ -1,3 +1,5 @@
+(:~ Consulta para obtener el resultado de la encuesta ~:)
+
 declare variable $participantes := count(db:open("tech_survey")//encuesta/encuestado);
 
 <analisis_encuesta participantes="{$participantes}">

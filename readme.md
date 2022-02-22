@@ -85,18 +85,18 @@ Para conocer mas sobre REST, recomendamos la lectura del [blog de Red Hat](https
 De foma general tenemos que escribir:
 
 ```
-http -a <usuario>:<contraseña> localhost:8984/rest/<base_de_datos>/<documento>
+http -a <usuario>:<contraseña> "localhost:8984/rest/<base_de_datos>/<documento>"
 ```
 
 En este caso particular lo que vamos a necesitar es:
 
 ```
-http -a admin:admin localhost:8984/rest/tech_survey/encuesta.xml
+http -a admin:admin "localhost:8984/rest/tech_survey/encuesta.xml"
 ```
 
 Si queremos realizar una consulta (por ejemplo la de `analisis_datos.xq`)
 tenemos que escribir:
 
 ```
-http -a admin:admin localhost:8984/rest/?run=analisis_datos.xq
+http -a admin:admin "localhost:8984/rest/?run=analisis_datos.xq"
 ```

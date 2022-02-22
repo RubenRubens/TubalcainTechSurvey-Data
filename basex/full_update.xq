@@ -1,3 +1,5 @@
+(:~ Actuliza toda la informacion de una persona ~:)
+
 replace node db:open("tech_survey")//encuesta/encuestado[@nombre="Ramon"]
 with
 <encuestado nombre="Daniel">

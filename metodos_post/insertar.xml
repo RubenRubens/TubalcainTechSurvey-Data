@@ -1,3 +1,5 @@
+<!-- Crea encuesta en la Base de Datos -->
+
 <query>
 	<text>
 		let $up := <![CDATA[<encuestado nombre="Celia">
