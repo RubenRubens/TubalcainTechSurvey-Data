@@ -55,6 +55,7 @@ añardir los datos del documento que se encuetra en `./basex/encuesta.xml`
 CREATE DATABASE tech_survey
 OPEN tech_survey
 ADD basex/encuesta.xml
+ADD basex/tecnologias.xml
 ```
 
 ### Ejecucion de XQuery
@@ -78,7 +79,6 @@ RUN basex/insertar.xq
 
 Para utilizar el servidor, vamos a necesitar un cliente HTTp. Nosotros hemos utilizado
 HTTPie, puedes encontrar información sobre su uso [aquí](https://httpie.io/docs/cli/default-behavior).
-Para conocer mas sobre REST, recomendamos la lectura del [blog de Red Hat](https://www.redhat.com/es/topics/api/what-is-a-rest-api).
 
 ### Acceso a un documento de la base de datos
 
